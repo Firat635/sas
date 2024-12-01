@@ -1,0 +1,76 @@
+.carousel-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+
+  .mySwiper {
+    width: 100%;
+    padding: 0 !important; 
+  }
+
+  .slide-content {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #666;
+  }
+
+  .slide-content img {
+    width: 150px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .slide-content img:hover {
+    transform: scale(1.1); 
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #333;
+    width: 30px;
+    height: 30px;
+    transition: color 0.3s, transform 0.3s;
+
+    &:hover {
+      color: #555;
+      transform: scale(1.2);
+    }
+
+    &::after {
+      font-size: 14px;
+    }
+  }
+
+ 
+  @media (max-width: 768px) {
+    .slide-content img {
+      width: 120px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 25px;
+      height: 25px;
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .slide-content img {
+      width: 100px;
+    }
+  }
+
+  @media (max-width: 280px) {
+    .slide-content img {
+      width: 80px;
+    }
+  }
+}

@@ -1,0 +1,1447 @@
+header {
+    .containerTop {
+        width: 100%;
+
+        .topHeader {
+            background-color: #F8F8F8;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #999999;
+            padding: 10px 30px;
+
+            .topHeaderText {
+                p {
+                    margin: 0px;
+                    font-size: 14px;
+
+                    a {
+                        color: #999999;
+                        transition: 0.5s;
+
+                        &:hover {
+                            color: #A6C76C;
+                        }
+                    }
+                }
+            }
+
+            .topHederTextLeft {
+                ul {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
+                    margin: 0px;
+                    margin-right: 30px;
+
+                    li {
+                        margin-right: 15px;
+                        font-size: 14px;
+                        position: relative;
+
+                        a {
+                            color: #999999;
+                            transition: 0.5s;
+
+                            &:hover {
+                                color: #A6C76C;
+                            }
+                        }
+
+                        &:hover .textTopBox {
+                            opacity: 1;
+                            visibility: visible;
+                            animation: fadeIn 0.5s ease-in-out forwards;
+                        }
+
+                        .textTopBox {
+                            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                            position: absolute;
+                            top: 150%;
+                            left: -30px;
+                            opacity: 0;
+                            visibility: hidden;
+                            animation: animeEnd 0.4s ease-in-out forwards;
+                            margin-top: -14px;
+                            z-index: 777;
+
+                            ul {
+                                margin-top: 14px;
+                                padding: 0px;
+                                display: flex;
+                                align-items: center;
+                                flex-direction: column;
+                                justify-content: center;
+                                padding: 5px;
+                                background-color: #fff;
+
+                                li {
+                                    margin: 4px 14px;
+                                    padding: 0px;
+
+                                    a {
+                                        color: #000;
+                                        transition: 0.4s;
+
+                                        &:hover {
+                                            color: #A6C76C;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &:not(:hover) .textTopBox {
+                            animation: animeEnd 0.5s ease-in-out forwards;
+                        }
+                    }
+                }
+            }
+        }
+
+        .middleHeader {
+            padding: 10px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .logoBox {
+                width: 25%;
+
+                a {
+                    img {
+                        width: 110px;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            .headerFrom {
+                width: 43%;
+                overflow: hidden;
+
+                form {
+                    overflow: hidden;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+
+                    input {
+                        color: #999999;
+                        font-weight: 300;
+                        font-size: 15px !important;
+                        line-height: 26px;
+                        border: none;
+                        padding: 9px 15px;
+                        outline: none;
+                    }
+
+                    select {
+                        width: 200px;
+                        color: #999999;
+                        font-weight: 300;
+                        font-size: 15px !important;
+                        line-height: 26px;
+                        border: none;
+                        padding: 9px 15px;
+                        margin-left: 30px;
+                        outline: none;
+
+                        border: none;
+
+                    }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        left: 46%;
+                        top: 17%;
+                        width: 1.4px;
+                        height: 33px;
+                        background-color: #ebebeb;
+                        z-index: 1;
+                    }
+
+                    border: solid 0.1px#99999996;
+
+                    .searchBox {
+                        border: none;
+                        background-color: transparent;
+                        padding: 0px 20px 0px 30px;
+
+                        .searchBoxIcon {
+
+                            font-size: 25px;
+                            transition: .5s;
+
+                            &:hover {
+                                color: #A6C76C;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .headerIconBox {
+                width: 25%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    color: #333333;
+                    transition: .5s;
+
+                    &:hover {
+                        color: #A6C76C;
+                    }
+
+                    p {
+                        font-size: 10px;
+                        margin: 0px;
+                        margin-top: 3px;
+                        line-height: 1;
+                    }
+
+                    .iconText {
+                        font-size: 30px;
+                    }
+
+                }
+
+                .iconTextBoxBefore {
+                    font-size: 30px;
+                    position: relative;
+
+                    &::before {
+                        content: "0";
+                        position: absolute;
+                        height: 20px;
+                        width: 20px;
+                        font-size: 13px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        background-color: #A6C76C;
+                        top: -5px;
+                        right: -17px;
+                        color: #fff;
+                    }
+
+
+                }
+            }
+        }
+
+        .endHeader {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .endHeaderBoxAll {
+                width: 95%;
+                border-top: solid 1px rgba(128, 128, 128, 0.436);
+
+                .endHeaderBox {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+
+                    .headerDropdown {
+                        width: 245px;
+                        display: flex;
+                        align-items: center;
+
+                        padding: 15px 20px;
+                        position: relative;
+                        color: #000;
+                        cursor: pointer;
+                        z-index: 999;
+
+                        &:hover {
+                            background-color: #A6C76C;
+                            color: #fff;
+
+                            .dropdownBtn {
+                                .hamburgerBox {
+                                    background-color: #fff;
+                                    transition: 0s;
+
+                                    &::before,
+                                    &::after {
+                                        transition: 0s;
+
+                                        background-color: #fff;
+                                    }
+                                }
+                            }
+                        }
+
+                        .dropdownBtn {
+                            background: none;
+                            border: none;
+                            outline: none;
+                            cursor: pointer;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: relative;
+                            margin-right: 10px;
+
+                            .hamburgerBox {
+                                display: block;
+                                width: 22px;
+                                height: 2px;
+                                background-color: #000;
+                                position: relative;
+                                transition: all 0.3s ease;
+
+                                &::before,
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    width: 22px;
+                                    height: 2px;
+                                    background-color: #000;
+                                    transition: all 0.3s ease;
+                                }
+
+                                &::before {
+                                    top: -7px;
+                                    left: 0px;
+                                }
+
+                                &::after {
+                                    top: 7px;
+                                    left: 0px;
+                                }
+                            }
+
+                            &.active .hamburgerBox {
+                                background-color: transparent;
+
+                                &::before {
+                                    transform: rotate(45deg);
+                                    top: 0;
+                                }
+
+                                &::after {
+                                    transform: rotate(-45deg);
+                                    top: 0;
+                                }
+                            }
+                        }
+
+                        .dropdownText {
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+
+                        .dropdownMenu {
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            background: #fff;
+                            color: #333;
+                            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+                            list-style: none;
+                            padding-top: 10px;
+                            margin: 0;
+                            display: none;
+                            padding-left: 0px;
+                            min-width: 100%;
+                            border-radius: 5px;
+                            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+                            li {
+                                padding: 8px 20px;
+                                border-bottom: solid .5px rgba(128, 128, 128, 0.404);
+                                transition: .5s;
+
+                                &:hover {
+                                    a {
+                                        color: #A6C76C;
+                                    }
+                                }
+
+                                .colorTextBlack {
+                                    color: #000;
+                                    font-weight: 600;
+                                }
+
+                                a {
+                                    text-decoration: none;
+                                    color: inherit;
+                                    font-size: 14px;
+                                    color: gray;
+                                    transition: .5s;
+
+                                }
+                            }
+                        }
+
+                        &.open .dropdownMenu {
+                            display: block;
+
+                        }
+                    }
+
+                    .navMenuBox {
+                        padding: 10px 0px;
+
+                        .navMenu {
+
+                            display: flex;
+                            width: 100%;
+                            position: relative;
+
+                            &::before {
+                                position: absolute;
+                                content: "";
+                                height: 18px;
+                                width: 2px;
+                                top: 10px;
+                                background-color: rgba(128, 128, 128, 0.434);
+                            }
+
+                            &::after {
+                                position: absolute;
+                                content: "";
+                                height: 18px;
+                                width: 2px;
+                                top: 10px;
+                                left: 100%;
+                                background-color: rgba(128, 128, 128, 0.434);
+                            }
+
+                            ul {
+                                margin: 0px 25px;
+                                display: flex;
+                                flex-wrap: wrap;
+                                padding: 0px;
+
+                                li {
+                                    padding: 7px 13px;
+                                    margin: 0px;
+                                    position: relative;
+
+                                    &::before {
+                                        position: absolute;
+                                        content: '';
+                                        width: 0%;
+                                        height: 2px;
+                                        background-color: #A6C76C;
+                                        right: 0;
+                                        top: -11px;
+
+                                        transition: .3s ease-in-out;
+
+                                        border-radius: 10px;
+                                        transition-delay: .2s;
+                                    }
+
+                                    &:hover::before {
+                                        width: 100%;
+
+                                    }
+
+                                    &::after {
+                                        position: absolute;
+                                        content: '';
+                                        width: 0%;
+                                        height: 2px;
+                                        left: 0;
+                                        top: -11px;
+                                        background: transparent;
+
+                                        border-radius: 10px;
+
+
+                                        transition: .3s ease-in-out;
+                                    }
+
+                                    &:hover::after {
+                                        background-color: #A6C76C;
+                                        width: 100%;
+
+                                    }
+
+                                    a {
+
+                                        font-weight: 500;
+                                        font-size: 15px;
+
+
+                                        color: #000;
+
+                                        &:hover {
+                                            color: #A6C76C;
+
+                                            .iconHome {
+                                                color: #A6C76C;
+                                            }
+                                        }
+
+                                        .iconHome {
+                                            font-size: 13px;
+                                            color: gray;
+
+                                        }
+
+
+
+                                    }
+
+                                    .saleText {
+                                        position: relative;
+
+                                        &::before {
+                                            content: "SALE";
+                                            background-color: #A6C76C;
+                                            font-size: 11px;
+                                            font-weight: 600;
+                                            padding: 0.5px 5px;
+                                            top: -20px;
+                                            right: 0;
+                                            position: absolute;
+                                            color: #fff;
+                                        }
+
+                                        &::after {
+                                            content: "";
+                                            position: absolute;
+                                            right: 21px;
+                                            transform: rotate(90deg);
+                                            width: 0;
+                                            top: -7px;
+                                            height: 0;
+                                            border-left: 5px solid transparent;
+                                            border-right: 7px solid transparent;
+                                            border-bottom: 10px solid #A6C76C;
+
+                                        }
+                                    }
+
+                                    &:hover .homeWebPhotoBox {
+                                        opacity: 1;
+                                        visibility: visible;
+                                        animation: fadeIn 0.5s ease-in-out forwards;
+
+                                    }
+
+                                    .homeWebPhotoBox {
+                                        position: absolute;
+                                        top: 150%;
+                                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                                        opacity: 0;
+                                        visibility: hidden;
+                                        animation: animeEnd 0.3s ease-in-out forwards;
+                                        margin-top: -32px;
+                                        z-index: 777;
+                                        padding-top: 20px;
+                                        width: 1111px;
+                                        left: -247px;
+
+
+                                        .homeWebInfo {
+                                            height: 500px;
+                                            width: 100%;
+                                            padding: 20px;
+                                            overflow-y: hidden;
+                                            overflow-x: hidden;
+                                            border: 1px solid #ccc;
+                                            position: absolute;
+                                            transition: all 0.3s;
+                                            border: none;
+                                            background-color: #fff;
+
+                                            &:hover {
+                                                overflow-y: auto;
+                                            }
+
+
+                                            &::-webkit-scrollbar {
+                                                width: 5px;
+
+
+                                            }
+
+                                            &::-webkit-scrollbar-track {
+                                                background: #f1f1f1;
+                                            }
+
+                                            &::-webkit-scrollbar-thumb {
+                                                background: #88888871;
+
+                                            }
+
+                                            &::-webkit-scrollbar-thumb:hover {
+                                                background: #555;
+                                            }
+
+                                            .homeTextInfo {
+                                                p {
+                                                    color: #333;
+                                                    font-weight: 400;
+                                                    font-size: 15px;
+                                                    text-transform: uppercase;
+
+                                                }
+                                            }
+
+                                            .homePhotoInfo {
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                align-items: center;
+                                                gap: 8px;
+
+                                                .homePhotoBox {
+                                                    width: 206px;
+                                                    height: 220px;
+                                                    overflow: hidden;
+
+                                                    text-align: center;
+
+                                                    a {
+                                                        color: rgba(128, 128, 128, 0.74);
+                                                        font-size: 14px;
+
+                                                    }
+
+                                                    .textBefore {
+                                                        &::before {
+                                                            content: 'Popular';
+                                                            background: #ffc107;
+                                                            position: absolute;
+                                                            left: -30px;
+                                                            top: 20px;
+                                                            width: 120px;
+                                                            transform: rotate(-45deg);
+
+                                                            color: #fff;
+                                                            text-align: center;
+                                                            z-index: 1;
+                                                            box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+                                                        }
+                                                    }
+
+                                                    .textBeforeNew {
+                                                        &::before {
+                                                            content: 'New';
+                                                            background: #EF837B;
+                                                            position: absolute;
+                                                            left: -30px;
+                                                            top: 20px;
+                                                            width: 120px;
+                                                            transform: rotate(-45deg);
+
+                                                            color: #fff;
+                                                            text-align: center;
+                                                            z-index: 1;
+                                                            box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+                                                        }
+                                                    }
+
+                                                    .storeText {
+                                                        position: relative;
+                                                        display: block;
+                                                        width: 206px;
+                                                        height: 167px;
+                                                        overflow: hidden;
+                                                        transition: .5s;
+
+
+
+
+                                                        .homeHeaderPhotoBoxOne {
+                                                            width: 100%;
+                                                            height: 100%;
+                                                            overflow: hidden;
+                                                            position: relative;
+                                                            display: block;
+                                                            object-fit: cover;
+
+                                                            .headerHoverBoxPhoto {
+                                                                width: 206px;
+                                                                object-fit: cover;
+                                                                position: absolute;
+                                                                top: 0;
+                                                                left: 0;
+                                                                transition: top 1s;
+
+                                                                &:hover {
+                                                                    bottom: 0%;
+                                                                }
+                                                            }
+
+                                                        }
+
+                                                        .homeHeaderPhotoBoxTwo {
+
+                                                            a {
+
+                                                                position: absolute;
+
+                                                                bottom: 0;
+                                                                right: 0;
+
+                                                                height: 50px;
+                                                                width: 50px;
+                                                                background-size: contain;
+                                                                background-repeat: no-repeat;
+                                                                background-position: center;
+                                                                transition: all .3s ease;
+                                                                background-color: #fff;
+
+                                                                img {
+                                                                    width: 100%;
+                                                                    height: 100%;
+                                                                    object-fit: cover;
+                                                                }
+
+                                                            }
+
+                                                            &:hover {
+                                                                background-color: #fff;
+
+                                                                a {
+                                                                    padding: 10px;
+                                                                    width: 100%;
+                                                                    height: 100%;
+
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+
+                                                    &:hover {
+                                                        .storeText {
+                                                            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+                                                            .homeHeaderPhotoBoxOne {
+
+
+                                                                .headerHoverBoxPhoto {
+                                                                    top: -363px;
+                                                                    transition: top 3.5s;
+                                                                }
+
+                                                            }
+
+
+                                                        }
+
+                                                        a {
+                                                            color: #A6C76C;
+                                                        }
+
+
+
+                                                    }
+                                                }
+                                            }
+
+                                        }
+                                    }
+
+                                    &:hover .shopWebBox {
+                                        opacity: 1;
+                                        visibility: visible;
+                                        animation: fadeIn 0.5s ease-in-out forwards;
+                                    }
+
+                                    .shopWebBox {
+                                        position: absolute;
+                                        display: flex;
+                                        opacity: 1;
+                                        visibility: hidden;
+                                        animation: animeEnd 0.3s ease-in-out forwards;
+                                        margin-top: -32px;
+                                        z-index: 777;
+                                        padding-top: 10px;
+                                        background-color: #fff;
+                                        top: 58px;
+                                        left: -350px;
+                                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+                                        .shopWebInfo {
+                                            margin-top: 28px;
+                                            background-color: #fff;
+                                            padding: 10px;
+                                            width: 250px;
+                                            height: 350px;
+
+                                            ul {
+                                                display: flex;
+                                                flex-direction: column;
+                                                margin: 10px 0px;
+
+                                                li {
+
+                                                    &:hover {
+                                                        a {
+
+                                                            color: #A6C76C;
+                                                        }
+                                                    }
+
+                                                    &::after {
+                                                        display: none;
+                                                    }
+
+                                                    &::before {
+                                                        display: none;
+                                                    }
+
+
+                                                    padding-top: 1px;
+
+                                                    .headerColorBlack {
+                                                        color: #333;
+                                                        text-transform: uppercase;
+                                                        font-weight: 700;
+                                                        font-size: 15px;
+                                                    }
+
+                                                    a {
+                                                        color: gray;
+                                                        font-size: 13px;
+                                                        letter-spacing: 1px;
+                                                        transition: .5s;
+
+                                                        img {
+                                                            width: 100%;
+                                                            height: 100%;
+
+                                                        }
+                                                    }
+
+                                                    .beforeNewText {
+                                                        position: relative;
+
+                                                        &::before {
+                                                            content: "New";
+                                                            color: #fff;
+                                                            font-size: 9px;
+                                                            padding: 2px 6px;
+                                                            border-radius: 5px;
+                                                            background-color: #1CC0A0;
+                                                            position: absolute;
+                                                            right: -40px;
+                                                            top: 0;
+                                                        }
+                                                    }
+
+                                                    .afterNewText {
+                                                        position: relative;
+
+                                                        &::before {
+                                                            content: "Hot";
+                                                            color: #fff;
+                                                            font-size: 9px;
+                                                            padding: 2px 6px;
+                                                            border-radius: 5px;
+                                                            background-color: #E53939;
+                                                            position: absolute;
+                                                            right: -40px;
+                                                            top: 0;
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+                                        }
+
+                                    }
+
+                                    .productWebBox {
+                                        position: absolute;
+                                        display: flex;
+                                        opacity: 1;
+                                        visibility: hidden;
+                                        animation: animeEnd 0.3s ease-in-out forwards;
+                                        margin-top: -32px;
+                                        z-index: 777;
+                                        padding-top: 10px;
+                                        top: 58px;
+                                        left: -350px;
+                                        background-color: #fff;
+                                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+                                        .productWebInfo {
+                                            margin-top: 28px;
+                                            background-color: #fff;
+                                            padding: 10px;
+                                            width: 250px;
+                                            height: 350px;
+
+                                            ul {
+                                                display: flex;
+                                                flex-direction: column;
+                                                margin: 10px 0px;
+
+                                                li {
+
+                                                    &:hover {
+                                                        a {
+
+                                                            color: #A6C76C;
+                                                        }
+                                                    }
+
+                                                    &::after {
+                                                        display: none;
+                                                    }
+
+                                                    &::before {
+                                                        display: none;
+                                                    }
+
+
+                                                    padding-top: 1px;
+
+                                                    .headerColorBlack {
+                                                        color: #333;
+                                                        text-transform: uppercase;
+                                                        font-weight: 700;
+                                                        font-size: 15px;
+                                                    }
+
+                                                    a {
+                                                        color: gray;
+                                                        font-size: 13px;
+                                                        letter-spacing: 1px;
+                                                        transition: .5s;
+
+                                                        img {
+                                                            width: 100%;
+                                                            height: 100%;
+
+                                                        }
+                                                    }
+
+                                                    .beforeNewText {
+                                                        position: relative;
+
+                                                        &::before {
+                                                            content: "New";
+                                                            color: #fff;
+                                                            font-size: 9px;
+                                                            padding: 2px 6px;
+                                                            border-radius: 5px;
+                                                            background-color: #1CC0A0;
+                                                            position: absolute;
+                                                            right: -40px;
+                                                            top: 0;
+                                                        }
+                                                    }
+
+                                                    .afterNewText {
+                                                        position: relative;
+
+                                                        &::before {
+                                                            content: "Hot";
+                                                            color: #fff;
+                                                            font-size: 9px;
+                                                            padding: 2px 6px;
+                                                            border-radius: 5px;
+                                                            background-color: #E53939;
+                                                            position: absolute;
+                                                            right: -40px;
+                                                            top: 0;
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+                                        }
+
+                                    }
+
+                                    &:hover .productWebBox {
+                                        opacity: 1;
+                                        visibility: visible;
+                                        animation: fadeIn 0.5s ease-in-out forwards;
+                                    }
+
+                                    .pagesWebBox {
+                                        position: absolute;
+                                        display: flex;
+                                        opacity: 1;
+                                        visibility: hidden;
+                                        animation: animeEnd 0.3s ease-in-out forwards;
+                                        margin-top: -32px;
+                                        z-index: 777;
+                                        padding-top: 10px;
+                                        top: 58px;
+                                        left: 0px;
+                                        background-color: #fff;
+                                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+                                        .pagesWebInfo {
+                                            margin-top: 8px;
+                                            background-color: #fff;
+                                            padding: 0px;
+                                            width: 250px;
+                                            height: 215px;
+
+                                            ul {
+                                                display: flex;
+                                                flex-direction: column;
+                                                margin: 10px 0px;
+
+                                                li {
+                                                    position: relative;
+                                                    margin: 2px 0px;
+
+                                                    &:hover {
+                                                        a {
+
+                                                            color: #A6C76C;
+                                                        }
+                                                    }
+
+                                                    &::after {
+                                                        display: none;
+                                                    }
+
+                                                    &::before {
+                                                        display: none;
+                                                    }
+
+
+                                                    padding-top: 1px;
+
+                                                    .headerColorBlack {
+                                                        color: #333;
+                                                        text-transform: uppercase;
+                                                        font-weight: 700;
+                                                        font-size: 15px;
+                                                    }
+
+                                                    a {
+                                                        color: gray;
+                                                        font-size: 13px;
+                                                        letter-spacing: 1px;
+                                                        transition: 0.5s;
+                                                        display: flex;
+                                                        align-items: center;
+                                                        justify-content: space-between;
+                                                        position: relative;
+
+                                                        &:hover {
+                                                            .rightDropDown {
+                                                                ul {
+                                                                    li {
+                                                                        a {
+                                                                            color: gray;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+
+                                                        .rightDropDown {
+                                                            position: absolute;
+                                                            left: 260px;
+                                                            top: -7px;
+                                                            background-color: #fff;
+                                                            width: 200px;
+                                                            opacity: 0;
+                                                            transform: translateX(30px);
+                                                            transition: transform 0.5s ease, opacity 0.5s ease;
+                                                            pointer-events: none;
+                                                            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+                                                            ul {
+                                                                li {
+                                                                    &:hover {
+                                                                        a {
+                                                                            color: #A6C76C;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+
+                                                    &:hover {
+                                                        .rightDropDown {
+                                                            opacity: 1;
+                                                            transform: translateX(-30px);
+                                                            pointer-events: auto;
+                                                        }
+                                                    }
+
+
+
+
+                                                }
+                                            }
+
+                                        }
+
+                                    }
+
+                                    &:hover .pagesWebBox {
+                                        opacity: 1;
+                                        visibility: visible;
+                                        animation: fadeIn 0.5s ease-in-out forwards;
+                                    }
+
+                                    .blogWebBox {
+                                        position: absolute;
+                                        display: flex;
+                                        opacity: 1;
+                                        visibility: hidden;
+                                        animation: animeEnd 0.3s ease-in-out forwards;
+                                        margin-top: -32px;
+                                        z-index: 777;
+                                        padding-top: 10px;
+                                        top: 58px;
+                                        left: 0px;
+                                        background-color: #fff;
+                                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+                                        .blogWebInfo {
+                                            margin-top: 8px;
+                                            background-color: #fff;
+                                            padding: 0px;
+                                            width: 250px;
+                                            height: 215px;
+
+                                            ul {
+                                                display: flex;
+                                                flex-direction: column;
+                                                margin: 10px 0px;
+
+                                                li {
+                                                    position: relative;
+                                                    margin: 2px 0px;
+
+                                                    &:hover {
+                                                        a {
+
+                                                            color: #A6C76C;
+                                                        }
+                                                    }
+
+                                                    &::after {
+                                                        display: none;
+                                                    }
+
+                                                    &::before {
+                                                        display: none;
+                                                    }
+
+
+                                                    padding-top: 1px;
+
+                                                    .headerColorBlack {
+                                                        color: #333;
+                                                        text-transform: uppercase;
+                                                        font-weight: 700;
+                                                        font-size: 15px;
+                                                    }
+
+                                                    a {
+                                                        color: gray;
+                                                        font-size: 13px;
+                                                        letter-spacing: 1px;
+                                                        transition: 0.5s;
+                                                        display: flex;
+                                                        align-items: center;
+                                                        justify-content: space-between;
+                                                        position: relative;
+
+                                                        &:hover {
+                                                            .leftDropDown {
+                                                                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+                                                                ul {
+                                                                    li {
+                                                                        a {
+                                                                            color: gray;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+
+                                                        .leftDropDown {
+                                                            position: absolute;
+                                                            right: 260px;
+                                                            top: -7px;
+                                                            background-color: #fff;
+                                                            width: 200px;
+                                                            opacity: 0;
+                                                            transform: translateX(-30px);
+                                                            transition: transform 0.5s ease, opacity 0.5s ease;
+                                                            pointer-events: none;
+
+                                                            ul {
+                                                                li {
+                                                                    &:hover {
+                                                                        a {
+                                                                            color: #A6C76C;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+
+                                                    &:hover {
+                                                        .leftDropDown {
+                                                            opacity: 1;
+                                                            transform: translateX(30px);
+                                                            pointer-events: auto;
+                                                        }
+                                                    }
+
+
+
+
+                                                }
+                                            }
+
+                                        }
+
+                                    }
+
+                                    &:hover .blogWebBox {
+                                        opacity: 1;
+                                        visibility: visible;
+                                        animation: fadeIn 0.5s ease-in-out forwards;
+                                    }
+
+                                }
+
+
+                                &:not(:hover) .homeWebPhotoBox {
+                                    animation: animeEnd 0.3s ease-in-out forwards;
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+                .headerDiscountBox {
+                    a {
+                        display: inline-block;
+                        font-size: 15px;
+                        font-weight: 700;
+                        margin-left: 10px;
+                        color: #000;
+
+                        .diamondIcon {
+                            margin: 0px 10px 0px 15px;
+                            font-size: 16px;
+                        }
+
+                        span {
+                            color: gray;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes animeEnd {
+    from {
+        opacity: 0.4;
+        transform: translateY(0px);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(40%);
+        display: none;
+    }
+}
+
+
+
+
+/* Responsiv */
+
+@media (max-width:1140px) {
+    header {
+        & .containerTop {
+            & .endHeader {
+                & .endHeaderBoxAll {
+                    .headerDiscountBox {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    header {
+        & .containerTop {
+            & .endHeader {
+                & .endHeaderBoxAll {
+                    & .endHeaderBox {
+                        & .navMenuBox {
+                            & .navMenu {
+                                &::after {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    header {
+        & .containerTop {
+            & .middleHeader {
+                & .headerFrom {
+                    & form {
+                        .searchBox {
+
+                            padding: 0px 8px 0px 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    header {
+        & .containerTop {
+            & .middleHeader {
+                & .headerIconBox {
+                    & a {
+                        p {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        header {
+            & .containerTop {
+                & .middleHeader {
+                    & .headerFrom {
+                        & form {
+                            select {
+                                width: 150px;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width:992px) {
+        header {
+            & .containerTop {
+                & .endHeader {
+                    & .endHeaderBoxAll {
+                        .headerDiscountBox {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        header {
+            & .containerTop {
+                & .middleHeader {
+                    & .headerFrom {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        header {
+            & .containerTop {
+                & .endHeader {
+                    display: none;
+                }
+            }
+        }
+
+        header {
+            & .containerTop {
+                & .middleHeader {
+                    & .headerIconBox {
+                        & a {
+                            .iconText {
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (max-width:768px) {
+            header {
+                & .containerTop {
+                    .topHeader {
+                        display: none;
+                    }
+                }
+            }
+
+            header {
+                & .containerTop {
+                    & .middleHeader {
+                        & .headerIconBox {
+                            & .iconTextBoxBefore {
+                                &::before {
+                                    height: 17px;
+                                    width: 17px;
+                                    font-size: 12px;
+                                    right: -14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Mobile */
+
+@media (max-width:576px) {}

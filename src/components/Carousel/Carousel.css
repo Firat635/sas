@@ -1,0 +1,124 @@
+.head img{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+}
+
+.head{
+    position: relative;
+    height: 30rem;
+    .bodyMain{
+        z-index: 1;
+        position: absolute;
+        width: 354px;
+        top: 140px;
+        right: 40px;
+        span{
+            color: rgba(128, 128, 128, 0.626);
+        }
+        h1{
+            font-size: 55px;
+            width: 100%;
+            font-weight: 400;
+            line-height: 1.2;
+            margin: 10px 0px 20px 0px;
+        }
+        button{
+            font-weight: 400;
+            background-color: transparent;
+            color:  #333333;
+            border: solid 1px #959595;
+            width: 170px;
+            outline: none;
+            padding: 8px 0px;
+            text-transform: uppercase;
+            &:hover{
+                color: #fff;
+                background-color:#A6C76C;
+                border-color: transparent;
+
+            }
+        }
+    }
+    .bodyMainPhoto{
+        z-index: 1;
+        position: absolute;
+       
+        width: 370 px;
+        top: 140px;
+        left: 40px;
+        span{
+            color: rgba(128, 128, 128, 0.626);
+        }
+        h1{            font-size: 52px;
+            width: 100%;
+            font-weight: 400;
+            line-height: 1.2;
+            margin: 10px 0px 20px 0px;
+        }
+        h2{
+            color: #A6C76C;
+            display: flex;
+
+            .colorText{
+                color: #959595;
+                font-size: 20px;
+                display: flex;
+                align-items: start;
+                justify-content: start;
+            }
+            .colorPrice{
+                color: #A6C76C;
+            }
+            font-size: 50px;
+            margin: 15px 0px;
+        }
+        button{
+            font-weight: 400;
+            background-color: transparent;
+            color:  #333333;
+            border: solid 1px #959595;
+            width: 170px;
+            outline: none;
+            padding: 8px 0px;
+            text-transform: uppercase;
+            &:hover{
+                color: #fff;
+                background-color:#A6C76C;
+                border-color: transparent;
+
+            }
+        }
+    }
+    
+
+}
+
+
+/* Responsiv */
+
+@media  (max-width:1140px){
+    .head {
+        .bodyMainPhoto {
+            z-index: 1;
+            position: absolute;
+            width: 436px;
+            top: 140px;
+            left: 40px;
+        }
+    }
+  
+}
+
+@media (max-width:992px) {
+    
+}
+
+
+
+/* Mobile */
+
+@media (max-width:576px) {
+   
+}

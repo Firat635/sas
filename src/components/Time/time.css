@@ -1,0 +1,42 @@
+.timeBoxClass {
+    display: flex;
+
+    .timeBoxDay {
+        display: flex;
+        align-items: center;
+
+        .timeBox {
+           margin: 20px 0px;
+            padding: 15px;
+            border-radius: 7px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #A6C76C;
+
+            h3 {
+                color: #fff;
+                margin: 0;
+                font-weight: 700;
+            }
+
+            .textTimeBox {
+                color: #fff !important;
+                font-weight: 500 !important;
+                letter-spacing: 1px;
+                font-size: 13px !important;
+                margin: 0;
+            }
+
+        }
+
+        span {
+            display: block !important;
+            font-size: 30px;
+            margin: 10px;
+            color: #000;
+
+        }
+    }
+}

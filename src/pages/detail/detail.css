@@ -1,0 +1,373 @@
+#detailHomeSec {
+    margin: 40px 0px;
+    position: relative;
+
+    /* position: relative; */
+    /* iconTop scss */
+    .buttonIconTop {
+        position: absolute;
+        right: 20px;
+        bottom: 30px;
+        position: fixed;
+        z-index: 7777;
+
+        .ButtonIconTopArr {
+            transition: .5s;
+            border: 1px solid rgba(128, 128, 128, 0.542);
+            height: 40px;
+            width: 40px;
+            padding: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: gray;
+            background-color: #faf8f8c2;
+
+            &:hover {
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                transform: translateY(-5px);
+
+            }
+
+
+
+
+
+        }
+    }
+
+    .boxDetail {
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .boxDetailText {
+        padding: 10px 10px 0px 20px;
+
+        h3 {
+            font-weight: 400;
+            font-size: 25px;
+            color: #333;
+        }
+
+        p {
+            .starIcon {
+                color: #D26E4B;
+                font-size: 13px;
+                margin: 1px;
+            }
+
+            a {
+                color: #959595;
+                margin-left: 10px;
+                transition: .5s;
+
+                &:hover {
+                    color: #A6C76C;
+                }
+            }
+        }
+
+        .detailInfoText {
+            font-size: 14px;
+            color: #333;
+        }
+
+
+
+
+        .detailBoxDropdowns {
+            display: flex;
+
+            p {
+                color: #959595;
+                margin-right: 12px;
+            }
+
+            .boxDropColorOne {
+                height: 15px;
+                width: 15px;
+                background-color: #000;
+                margin-right: 5px;
+
+            }
+
+            .boxDropColorTwo {
+                height: 15px;
+                width: 15px;
+                background-color: gray;
+                margin-right: 5px;
+                color: gray;
+
+            }
+
+            #dropdown-basic {
+                background-color: #fff;
+                color: #000000bf;
+                border: solid 1px #00000062;
+                border-radius: 0px !important;
+                padding: 5px 13px;
+                width: 155px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+        }
+
+        .detailBtnBox {
+            margin: 20px 0px;
+
+            .numberBox {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+
+                .counter {
+                    color: gray;
+                    width: 100px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    border: solid 1px gray;
+                    padding: 5px 10px;
+                    cursor: pointer;
+                    user-select: none;
+                    margin: 0px 15px 0px 0px;
+                }
+
+                .counter {
+                    color: gray;
+                    width: 120px;
+                    /* Biraz genişletildi */
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    border: solid 1px gray;
+                    padding: 7px 10px;
+                    cursor: pointer;
+                    user-select: none;
+                }
+
+                .counter input {
+                    width: 40px;
+                    text-align: center;
+                    border: none;
+                    outline: none;
+                    font-size: 14px;
+                    color: gray;
+                    background: none;
+
+                }
+
+                .counter input::-webkit-inner-spin-button,
+                .counter input::-webkit-outer-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
+                button {
+                    text-transform: uppercase;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: none;
+                    background-color: #A6C76C;
+                    color: #fff;
+                    padding: 7px 10px;
+                    width: 55%;
+                    transition: .5s;
+
+                    &:hover {
+                        background-color: #92B25A;
+                    }
+
+                    .btnShopIcon {
+                        margin: 0px 10px;
+                    }
+                }
+            }
+        }
+
+        .detailWishlistBox {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+
+            .wishlistBoxOne {
+                .btnHeart {
+                    cursor: pointer;
+                    color: #A6C76C;
+                    margin: 0px 5px;
+                    font-size: 20px;
+                }
+
+                button {
+                    border: none;
+                    color: #333;
+                    padding: 7px 10px;
+                    background-color: transparent;
+                    border-bottom: solid 1px transparent;
+                    transition: .5s;
+
+                    &:hover {
+                        color: #A6C76C;
+                        border-bottom: solid 1px #A6C76C;
+                    }
+                }
+            }
+        }
+
+        .shareBox {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: solid 1px rgba(128, 128, 128, 0.502);
+            margin: 20px 0px;
+            padding: 20px 0px;
+
+            span {
+                color: gray;
+            }
+
+            .boxCategories {
+                display: flex;
+
+                p {
+                    margin: 0px;
+
+                    a {
+                        color: #333;
+                        transition: .3s;
+
+                        &:hover {
+                            color: #A6C76C;
+                        }
+                    }
+                }
+            }
+
+            .shareBoxInfo {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .shareIcon {
+                    color: gray;
+                    border-radius: 50%;
+                    border: solid 1px gray;
+                    height: 30px;
+                    width: 30px;
+                    padding: 7px;
+                    margin-left: 10px;
+                    transition: .5s;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #A6C76C;
+                        border: solid 1px #A6C76C;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    #detailHomeSec {
+        & .boxDetailText {
+            & .detailBtnBox {
+                .numberBox {
+                    flex-direction: column;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+
+    #detailHomeSec {
+        & .boxDetailText {
+            & .detailBtnBox {
+                & .numberBox {
+                    .counter {
+                        width: 70%;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    #detailHomeSec {
+        & .boxDetailText {
+            & .detailBtnBox {
+                & .numberBox {
+                    button {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+
+    #detailHomeSec {
+        & .boxDetailText {
+            .detailWishlistBox {
+                gap: ;
+            }
+        }
+    }
+
+    #detailHomeSec {
+        & .boxDetailText {
+            & .detailWishlistBox {
+                .wishlistBoxOne {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    #detailHomeSec {
+        & .boxDetailText {
+            & .detailWishlistBox {
+                & .wishlistBoxOne {
+                    .btnHeart {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    #detailHomeSec {
+        & .boxDetailText {
+            & .detailWishlistBox {
+                & .wishlistBoxOne {
+                    button {
+                        padding: 0;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+    #detailHomeSec {
+        & .boxDetailText {
+            .shareBox {
+                flex-direction: column;
+                gap: 10px;
+                align-items: start;
+            }
+        }
+    }
+}

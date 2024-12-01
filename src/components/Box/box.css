@@ -1,0 +1,173 @@
+.box {
+    position: relative;
+    width: 226px;
+    height: 430px;
+    overflow: hidden;
+    border-radius: 7px;
+    transition: 1s;
+    background-color: #fff;
+    margin: 10px;
+    p{
+        height: 47px;
+        overflow: hidden;
+    }
+
+    .img {
+        position: relative;
+        width: 226px;
+        height: 226px;
+    }
+
+    .img img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 1;
+        transition: opacity 1s ease, transform 1s ease;
+    }
+
+    .hidden img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transform: scale(1);
+        transition: opacity 1s ease, transform 1s ease;
+    }
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        cursor: pointer;
+
+        .img img {
+            opacity: 0;
+        }
+
+        .hidden img {
+            opacity: 1;
+
+        }
+
+        .btn,
+        .wish {
+            opacity: 1;
+        }
+    }
+
+    .rating svg {
+        color: #d26e4b;
+    }
+
+    .btn,
+    .wish {
+        opacity: 0;  
+        z-index: 1;
+        transition: 0.5s;
+    }
+
+    .box-body p {
+        margin: 0;
+        transition: .5s;
+
+        &:hover {
+            color: #a6c76c;
+        }
+    }
+
+    .box-body .title {
+        color: #a6c76c;
+    }
+
+    .wish {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 14px;
+
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .heartIcon {
+            height: 40px;
+            width: 40px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 50%;
+            transition: .5s;
+           
+            &:hover{
+                background-color: #a6c76c;
+                color: #fff;
+            }
+            /* &::after{
+                content: "Add To Wishlist";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 20px;
+                width: 100%;
+                color: #fff;
+                background-color: #a6c76c;
+                padding: 20px;
+                z-index: 999;
+            } */
+
+        }
+        .glassIcon{
+            height: 40px;
+            width: 40px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 50%;
+            transition: .5s;
+           
+            &:hover{
+                background-color: #a6c76c;
+                color: #fff;
+            }
+          
+        }
+
+    }
+
+    .box-body {
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .btn,
+    .btn button {
+        width: 100%;
+        padding: 5px 10px;
+    }
+
+    .btn button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: #fff;
+        font-size: 15px;
+        border: solid 1px #000;
+        transition: 0.5s;
+
+        &:hover {
+            background-color: #a6c76c;
+            color: #fff;
+            border: solid 1px transparent;
+        }
+    }
+
+    .btn svg {
+        font-size: 20px;
+    }
+}
+.quantity{
+    height: 29rem;
+}

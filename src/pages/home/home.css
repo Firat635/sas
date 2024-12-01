@@ -1,0 +1,880 @@
+#heroSection {
+    position: relative;
+
+    .buttonIconTop {
+        position: absolute;
+        right: 20px;
+        bottom: 30px;
+        position: fixed;
+        z-index: 7777;
+
+        .ButtonIconTopArr {
+            transition: .5s;
+            border: 1px solid rgba(128, 128, 128, 0.542);
+            height: 40px;
+            width: 40px;
+            padding: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: gray;
+            background-color: #faf8f8c2;
+
+            &:hover {
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                transform: translateY(-5px);
+
+            }
+
+
+
+
+
+        }
+    }
+
+
+}
+
+
+
+#decorBox {
+    .container {
+        .decorBoxTables {
+            background-image: url('https://midas-theme.myshopify.com/cdn/shop/files/banner-1_166c7aab-1798-4a1a-9781-0eebce86384d.jpg?v=1614781570');
+            box-sizing: border-box;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 400px;
+            padding: 40px 60px;
+
+
+            p {
+                font-size: 14px;
+                color: #959595;
+            }
+
+            h3 {
+                font-size: 25px;
+                font-weight: 700;
+            }
+
+            .fromText {
+                font-weight: 300;
+                font-size: 20px;
+            }
+
+            button {
+                font-weight: 400;
+                background-color: transparent;
+                color: #333333;
+                border: solid 1px #959595;
+                width: 160px;
+                outline: none;
+                padding: 8px 0px;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: #fff;
+                    background-color: #A6C76C;
+                    border-color: transparent;
+
+                }
+            }
+        }
+
+        .decorBoxKitchenware {
+            background-image: url('https://midas-theme.myshopify.com/cdn/shop/files/banner-2_19a566ef-3d3f-403e-baf1-2e0100d7d383.jpg?v=1614781570');
+            box-sizing: border-box;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 400px;
+            padding: 30px;
+
+
+            p {
+                font-size: 14px;
+                color: #fff;
+            }
+
+            h3 {
+                font-size: 25px;
+                font-weight: 700;
+                color: #fff;
+            }
+
+            .fromText {
+                font-weight: 300;
+                font-size: 20px;
+            }
+
+            button {
+                font-weight: 400;
+                background-color: transparent;
+                color: #fff;
+                border: none;
+                border-bottom: solid 3px #fff;
+                width: 160px;
+                outline: none;
+                padding: 8px 0px;
+                font-size: 13px;
+                letter-spacing: 1.5px;
+                transition: .5s;
+
+                &:hover {
+                    color: #000;
+                    background-color: #fff;
+                    border-color: transparent;
+
+                }
+            }
+        }
+
+        .decorBoxHomeDecorAll {
+
+
+            .decorBoxHomeDecor {
+                background-image: url('https://midas-theme.myshopify.com/cdn/shop/files/banner-3_994e8f4e-87cc-4172-bb1c-715bbaf43a37.jpg?v=1614781570&width=1%27);%20background-image:%20url(&quot;https://midas-theme.myshopify.com/cdn/shop/files/banner-3_994e8f4e-87cc-4172-bb1c-715bbaf43a37.jpg?v=1614781570&quot');
+                box-sizing: border-box;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                height: 190px;
+                padding: 20px;
+
+
+                p {
+                    font-size: 14px;
+                    color: gray;
+                    margin: 8px 0px;
+                }
+
+                h3 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: #000;
+                }
+
+                .fromText {
+                    font-weight: 300;
+                    font-size: 20px;
+                }
+
+                button {
+                    font-weight: 400;
+                    background-color: transparent;
+                    color: #333333;
+                    border: none;
+                    border-bottom: solid 3px #333333;
+                    width: 160px;
+                    outline: none;
+                    padding: 8px 0px;
+                    font-size: 13px;
+                    letter-spacing: 1.5px;
+                    transition: .5s;
+
+                    &:hover {
+                        color: #fff;
+                        background-color: #333333;
+                        border-color: transparent;
+
+                    }
+                }
+            }
+
+            .decorBoxHomeDecorBox {
+                background-image: url('https://midas-theme.myshopify.com/cdn/shop/files/banner-4_d2586afe-cc5e-4077-ab47-43d033645507.jpg?v=1614781570');
+                box-sizing: border-box;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                height: 200px;
+                margin-top: 10px;
+                padding: 20px;
+
+
+                p {
+                    font-size: 14px;
+                    color: gray;
+                    margin: 8px 0px;
+                }
+
+                h3 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: #000;
+                }
+
+                .fromText {
+                    font-weight: 300;
+                    font-size: 20px;
+                }
+
+                button {
+                    font-weight: 400;
+                    background-color: transparent;
+                    color: #333333;
+                    border: none;
+                    border-bottom: solid 3px #333333;
+                    width: 160px;
+                    outline: none;
+                    padding: 8px 0px;
+                    font-size: 13px;
+                    letter-spacing: 1.5px;
+                    transition: .5s;
+
+                    &:hover {
+                        color: #fff;
+                        background-color: #333333;
+                        border-color: transparent;
+
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.productsShopBox {
+    .textBoxAll {
+        text-align: center;
+        margin: 30px 0px;
+
+        .textFeatured {
+            color: #333333;
+            border-bottom: solid 1px #A6C76C;
+        }
+
+        a {
+            font-size: 27px;
+            font-weight: 600;
+            color: #999999;
+            padding: 10px;
+        }
+    }
+}
+
+#timeSection {
+    background-color: #F8F8F8;
+    padding: 40px 0px;
+
+    .container {
+
+        .timeBoxAll {
+            display: flex;
+            background-color: #fff;
+            justify-content: space-between;
+            height: 100%;
+            width: 100%;
+
+            .timeBoxAllText {
+                padding: 40px;
+                width: 55%;
+
+                h5 {
+                    color: #A6C76C;
+                    line-height: 1.3;
+                    font-weight: 400;
+
+                }
+
+                h1 {
+                    font-size: 40px;
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                    color: #333333;
+                }
+
+                a {
+                    color: #333333;
+                    font-size: 22px;
+                    font-weight: 700;
+                    transition: .5s;
+
+                    &:hover {
+                        color: #A6C76C;
+                    }
+                }
+
+                p {
+                    font-size: 23px;
+                    color: #333333;
+                    font-weight: 700;
+                }
+
+                button {
+                    font-weight: 400;
+                    background-color: transparent;
+                    color: #333333;
+                    border: solid 1px #959595;
+                    width: 170px;
+                    outline: none;
+                    padding: 8px 0px;
+                    text-transform: uppercase;
+                    margin: 20px 0px;
+
+                    &:hover {
+                        color: #fff;
+                        background-color: #A6C76C;
+                        border-color: transparent;
+
+                    }
+                }
+            }
+
+            .timeBoxAllPhoto {
+                display: flex;
+                align-items: end;
+                width: 45%;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+
+        .timeSecLeftBox {
+            background-image: url('https://midas-theme.myshopify.com/cdn/shop/files/banner-5_f26a428e-4506-4598-9f97-3046f4dafd60.jpg?v=1614781580');
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+            padding: 30px;
+            text-align: center;
+
+            p {
+                color: #fff;
+                margin: 0;
+
+            }
+
+            h1 {
+                color: #fff;
+                font-size: 30px;
+                font-weight: 700;
+                letter-spacing: 3px;
+
+
+                margin: 15px auto;
+            }
+
+            button {
+                font-weight: 400;
+                background-color: transparent;
+                color: #fff;
+                border: none;
+                border-bottom: solid 3px #fff;
+                width: 160px;
+                outline: none;
+                padding: 8px 0px;
+                font-size: 13px;
+                letter-spacing: 1.5px;
+                transition: .5s;
+
+                &:hover {
+                    color: #333;
+                    background-color: #fff;
+                    border-color: transparent;
+
+                }
+            }
+
+        }
+    }
+
+
+
+
+}
+
+#productsSec {
+    h1 {
+        text-align: center;
+        padding-top: 20px;
+        margin: 30px 0px;
+        font-size: 30px;
+    }
+
+    .productsList {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        ul {
+            display: flex;
+            gap: 10px;
+            font-size: 15px;
+            padding: 0;
+            text-transform: uppercase;
+
+            .allText {
+                color: #333333;
+                border-bottom: solid 1px #33333387;
+
+            }
+
+            a {
+                padding: 7px;
+                color: #959595;
+
+            }
+        }
+    }
+}
+
+#blogSec {
+    .container {
+        border-top: solid 1px #9595956c;
+        padding-top: 30px;
+    }
+
+    h2 {
+        text-align: center;
+        margin: 30px;
+    }
+
+    .blogBoxAll {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .blogBoxPhoto {
+            img {
+                width: 100%;
+            }
+        }
+
+        p {
+            color: #ccc;
+            font-size: 15px;
+            line-height: 1.5;
+            cursor: pointer;
+            margin: 20px 0px 10px 0px;
+        }
+
+        a {
+            font-size: 18px;
+            color: #000;
+            font-weight: 700;
+            letter-spacing: 1px;
+            transition: .5s;
+            margin: 5px 0px 15px 0px;
+
+            &:hover {
+                color: #A6C76C;
+            }
+        }
+
+        button {
+            border: none;
+            background-color: transparent;
+            color: #A6C76C;
+            font-size: 14px;
+            font-weight: 500;
+            transition: .5s;
+            border-bottom: solid 2px transparent;
+
+            .storeIcon {
+                font-weight: 600;
+                font-size: 16px;
+                transform: scale(0);
+                transition: .3s;
+
+
+            }
+
+            &:hover {
+                border-bottom: solid 2px #A6C76C;
+
+                .storeIcon {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    .blogSecBtnBox {
+        text-align: center;
+        margin: 30px;
+
+        button {
+            border: none;
+            background-color: transparent;
+            color: #333;
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: 1px;
+            border-bottom: solid 2px#333;
+            padding: 8px 15px;
+            transition: .5s;
+
+            &:hover {
+                background-color: #333;
+                color: #fff;
+            }
+        }
+    }
+}
+
+#homeEndSection {
+    background-color: #FCF8E7;
+
+    .freeBox {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+
+        .freeIcon {
+            height: 77px;
+            width: 77px;
+            padding: 15px;
+        }
+
+        h6 {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 15px;
+
+
+        }
+
+        p {
+            margin: 0px;
+            font-size: 15px;
+            color: #959595;
+        }
+    }
+
+    .endSectionBox {
+        background-image: url('https://midas-theme.myshopify.com/cdn/shop/files/parallax.jpg?v=1614781580');
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px;
+
+        h5 {
+            margin-top: 30px;
+            color: #fff;
+
+        }
+
+        p {
+            color: #f0f0f0;
+            margin: 10px 0px 20px 0px;
+        }
+
+        form {
+            width: 100%;
+            text-align: center;
+            padding: 15px 0px 20px 0px;
+
+            input {
+                outline: none;
+                padding: 11px 20px;
+                border: none;
+                width: 35%;
+            }
+
+            button {
+                padding: 11px 25px;
+                border: none;
+                background-color: #A6C76C;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.boxContainer {
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+/* Responsiv */
+
+
+@media (max-width:1140px) {}
+
+@media (max-width:992px) {
+    #decorBox {
+        & .container {
+            .decorBoxHomeDecorAll {
+                display: flex;
+                gap: 5px;
+                align-items: center;
+                justify-content: center;
+
+            }
+        }
+    }
+
+    #timeSection {
+        & .container {
+            .timeBoxAll {
+                flex-direction: column;
+            }
+        }
+    }
+
+    #timeSection {
+        & .container {
+            & .timeBoxAll {
+                .timeBoxAllText {
+                    padding: 40px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    #timeSection {
+        & .container {
+            & .timeBoxAll {
+                .timeBoxAllPhoto {
+                    display: flex;
+                    align-items: end;
+                    width: 100%;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+
+    #timeSection {
+        & .container {
+            .timeSecLeftBox {
+                background-image: url(https://midas-theme.myshopify.com/cdn/shop/files/banner-5_f26a428e-4506-4598-9f97-3046f4dafd60.jpg?v=1614781580);
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                padding: 10px;
+                padding-top: 30px;
+                text-align: center;
+            }
+        }
+    }
+
+    #blogSec {
+        .blogBoxAll {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 30px 0px;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    #decorBox {
+        & .container {
+            .decorBoxHomeDecorAll {
+                display: flex;
+                gap: 5px;
+                align-items: center;
+                justify-content: center;
+
+            }
+        }
+    }
+
+    #timeSection {
+        & .container {
+            & .timeBoxAll {
+                .timeBoxAllText {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+
+    #timeSection {
+        & .container {
+            & .timeBoxAll {
+                .timeBoxAllPhoto {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    overflow: hidden;
+                    justify-content: center;
+
+                    img {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+
+    #timeSection {
+        & .container {
+            .timeSecLeftBox {
+                background-image: url(https://midas-theme.myshopify.com/cdn/shop/files/banner-5_f26a428e-4506-4598-9f97-3046f4dafd60.jpg?v=1614781580);
+                background-size: cover;
+                background-position: center;
+                height: 400px;
+                width: 80%;
+                padding: 10px;
+                padding-top: 30px;
+                text-align: center;
+                margin: 10px auto;
+            }
+        }
+    }
+
+    #blogSec {
+        & .blogBoxAll {
+            .blogBoxPhoto {
+                width: 100%;
+            }
+        }
+    }
+
+    #homeEndSection {
+        .freeBox {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            margin-top: 20px;
+        }
+    }
+
+    #homeEndSection {
+        & .endSectionBox {
+            & form {
+                input {
+
+                    width: 55%;
+                }
+            }
+        }
+    }
+
+    #decorBox {
+        & .container {
+            .decorBoxKitchenware {
+                margin: 20px 0px 10px 0px;
+            }
+        }
+    }
+
+    #decorBox {
+        & .container {
+            .decorBoxHomeDecorAll {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+/* Mobile */
+
+@media (max-width:576px) {
+    .head {
+        & .bodyMainPhoto {
+            h1 {
+                font-size: 35px !important;
+            }
+        }
+    }
+
+    .head {
+        .bodyMainPhoto {
+            width: 250px !important;
+        }
+    }
+
+    .head {
+        .bodyMain {
+            width: 250px !important;
+
+        }
+    }
+
+    .head {
+        & .bodyMain {
+            h1 {
+                font-size: 35px !important;
+
+            }
+        }
+
+    }
+
+    .productsShopBox {
+        .textBoxAll {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    #timeSection {
+        & .container {
+            & .timeBoxAll {
+                .timeBoxAllText {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    #productsSec {
+        h1 {
+            font-size: 25px;
+        }
+    }
+
+    #productsSec {
+        & .productsList {
+            ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    }
+
+    #homeEndSection {
+        & .endSectionBox {
+            p {
+                text-align: center;
+            }
+        }
+    }
+
+    #homeEndSection {
+        & .endSectionBox {
+            & form {
+                input {
+                    width: 100%;
+                    margin: 20px 0px;
+                }
+            }
+        }
+    }
+
+    #homeEndSection {
+        .freeBox {}
+    }
+}
