@@ -9,25 +9,41 @@ import { PiShoppingCart } from "react-icons/pi";
 import { IoDiamond } from "react-icons/io5";
 import { IoIosArrowForward } from "react-icons/io";
 import { Register } from "../register/Register";
+import { RxHamburgerMenu } from "react-icons/rx";
 import { useDispatch, useSelector } from "react-redux";
 import { setSearchProduct } from "../../redux/feature/product/ProductSlice";
+import { IoSearchOutline } from "react-icons/io5";
+import { IoCloseOutline } from "react-icons/io5";
+import { FaFacebookF } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { IoLogoInstagram } from "react-icons/io";
+import { FaYoutube } from "react-icons/fa";
+
+import { FaPinterestP } from "react-icons/fa";
 
 const Header = () => {
   const [drop, setDrop] = useState(false);
   const [register, setRegister] = useState(false);
   const dispatch = useDispatch();
+  const [isMenuVisible, setIsMenuVisible] = useState(true); // Başlangıçta menü açık
+
+  const handleCloseMenu = () => {
+    setIsMenuVisible(false);
+  };
 
   let { searchProduct, data, findProduct, errorMessage } = useSelector(
     (state) => state.product
   );
   const handleSearch = (e) => {
     dispatch(setSearchProduct(e.target.value));
-
   };
 
   const getUser = () => {
     setRegister(!register);
   };
+
+  
+  
 
   return (
     <header id="header">
@@ -79,20 +95,307 @@ const Header = () => {
         </div>
         <div className="middleHeader py-4">
           <div className="logoBox">
-            <a href="/">
+            <a className="logoImg" href="/">
               <img
                 src="https://midas-theme.myshopify.com/cdn/shop/files/logo_c1cc906b-de91-4cb3-840b-9c2dd7e81e2a_125x@2x.png?v=1614727356"
-                alt=""
+                alt="Logo"
               />
             </a>
+
+            {isMenuVisible && (
+              <div className="hamburgerListBox">
+                <div className="menuBoxHamburger">
+                  <span className="iconCloseBox" onClick={handleCloseMenu}>
+                    <IoCloseOutline className="iconClose" />
+                  </span>
+                  <form>
+                    <input type="search" placeholder="Search in..." />
+                    <button>
+                      <IoSearchOutline className="searchIconLop" />
+                    </button>
+                  </form>
+                  <div className="menuCategoriesBox">
+                    <ul className="menuCategoriesText">
+                      <li>
+                        <a className="menuTextLink" href="/">
+                          menu
+                        </a>
+                      </li>
+                      <li>
+                        <a className="categoriesTextLink" href="/">
+                          categories
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="headerHamburger-Text">
+                    <ul className="allLinkText">
+                      <li>
+                        <a>
+                          home <IoIosArrowDown className="iconBoxArrDown" />
+                        </a>
+
+                        <div className="linkTextBox">
+                          <ul className="linkTextDownBox">
+                            <li>
+                              <a href="/">01 - furniture store</a>
+                            </li>
+                            <li>
+                              <a href="/">01 - furniture store (RTL)</a>
+                            </li>
+                            <li>
+                              <a href="/">02 - furniture store</a>
+                            </li>
+                            <li>
+                              <a href="/">03 - electronic store</a>
+                            </li>
+                            <li>
+                              <a href="/">04 - electronic store</a>
+                            </li>
+                            <li>
+                              <a href="/">05 - furniture store</a>
+                            </li>
+                            <li>
+                              <a href="/">07 - furniture store</a>
+                            </li>
+                            <li>
+                              <a href="/">08 - furniture store</a>
+                            </li>
+                            <li>
+                              <a href="/">09 - furniture store</a>
+                            </li>
+                            <li>
+                              <a href="/">10 - shoes store</a>
+                            </li>
+                            <li>
+                              <a href="/">11 - furniture store</a>
+                            </li>
+                            <li>
+                              <a href="/">12 - fashion store</a>
+                            </li>
+                            <li>
+                              <a href="/">13 - market store</a>
+                            </li>
+                            <li>
+                              <a href="/">14 - fashion store</a>
+                            </li>
+                            <li>
+                              <a href="/">15 - lookbook store</a>
+                            </li>
+                            <li>
+                              <a href="/">16 - lookbook store</a>
+                            </li>
+                            <li>
+                              <a href="/">17 - market store</a>
+                            </li>
+                            <li>
+                              <a href="/">18 - fashion store</a>
+                            </li>
+                            <li>
+                              <a href="/">19 - game store</a>
+                            </li>
+                            <li>
+                              <a href="/">20 - book store</a>
+                            </li>
+                            <li>
+                              <a href="/">21 - Sport</a>
+                            </li>
+                            <li>
+                              <a href="/">22 - Tools </a>
+                            </li>
+                            <li>
+                              <a href="/">23 - Fashion</a>
+                            </li>
+                            <li>
+                              <a href="/">24 - Extreme Sport</a>
+                            </li>
+                            <li>
+                              <a href="/">25 - Jewelry </a>
+                            </li>
+                            <li>
+                              <a href="/">28 - Food Market </a>
+                            </li>
+                            <li>
+                              <a href="/">29 - T-shirt Store</a>
+                            </li>
+                            <li>
+                              <a href="/">30 - One Product </a>
+                            </li>
+                            <li>
+                              <a href="/">31 - Yoga Store </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a>
+                          shop
+                          <IoIosArrowDown className="iconBoxArrDown" />
+                        </a>
+
+                        <div className="linkTextBox">
+                          <ul className="linkTextDownBox">
+                            <li>
+                              <a href="/">Shop List</a>
+                            </li>
+                            <li>
+                              <a href="/">Shop Grid</a>
+                            </li>
+                            <li>
+                              <a href="/">Shop Market</a>
+                            </li>
+                            <li>
+                              <a href="/">Shop Boxed No Sidebar</a>
+                            </li>
+                            <li>
+                              <a href="/">Shop Fullwidth No Sidebar</a>
+                            </li>
+                            <li>
+                              <a href="/">Product Category Boxed</a>
+                            </li>
+                            <li>
+                              <a href="/">Product Category Fullwidth</a>
+                            </li>
+                            <li>
+                              <a href="/">Cart</a>
+                            </li>
+                            <li>
+                              <a href="/">Checkout</a>
+                            </li>
+                            <li>
+                              <a href="/">Wishlist</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a>
+                          product
+                          <IoIosArrowDown className="iconBoxArrDown" />
+                        </a>
+
+                        <div className="linkTextBox">
+                          <ul className="linkTextDownBox">
+                            <li>
+                              <a href="/">Default</a>
+                            </li>
+                            <li>
+                              <a href="/">Centered</a>
+                            </li>
+                            <li>
+                              <a href="/">Extended Info</a>
+                            </li>
+                            <li>
+                              <a href="/">Gallery</a>
+                            </li>
+                            <li>
+                              <a href="/">Sticky Info</a>
+                            </li>
+                            <li>
+                              <a href="/">Boxed With Sidebar</a>
+                            </li>
+                            <li>
+                              <a href="/">Full Width</a>
+                            </li>
+                            <li>
+                              <a href="/">Masonry Sticky Info</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a>
+                          Pages
+                          <IoIosArrowDown className="iconBoxArrDown" />
+                        </a>
+
+                        <div className="linkTextBox">
+                          <ul className="linkTextDownBox">
+                            <li>
+                              <a href="/">About</a>
+                            </li>
+                            <li>
+                              <a href="/">Contact</a>
+                            </li>
+                            <li>
+                              <a href="/">Login</a>
+                            </li>
+                            <li>
+                              <a href="/">FAQs</a>
+                            </li>
+                            <li>
+                              <a href="/">Error 404</a>
+                            </li>
+                            <li>
+                              <a href="/">Coming Soon</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a>
+                          Blog
+                          <IoIosArrowDown className="iconBoxArrDown" />
+                        </a>
+
+                        <div className="linkTextBox">
+                          <ul className="linkTextDownBox">
+                            <li>
+                              <a href="/">Classic</a>
+                            </li>
+                            <li>
+                              <a href="/">Listing</a>
+                            </li>
+                            <li>
+                              <a href="/">Grid</a>
+                            </li>
+                            <li>
+                              <a href="/">Masonry</a>
+                            </li>
+                            <li>
+                              <a href="/">Mask</a>
+                            </li>
+                            <li>
+                              <a href="/">Single Post</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a>Buy Now</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="shareBox">
+                    <div className="shareBoxInfo">
+                      <a href="https://www.facebook.com/">
+                        <FaFacebookF className="shareIcon" />
+                      </a>
+                      <a href="https://x.com/?lang=tr">
+                        <FaTwitter className="shareIcon" />
+                      </a>
+                      <a href="https://www.instagram.com/">
+                        <IoLogoInstagram className="shareIcon" />
+                      </a>
+                      <a href="https://www.youtube.com/">
+                        <FaYoutube  className="shareIcon"/>
+                      </a>
+                      <a href="https://www.pinterest.com/">
+                        <FaPinterestP className="shareIcon" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
           <div className="headerFrom">
             <form>
               <input
-                 type="text"
-                 placeholder="Search for a product..."
-                 value={searchProduct}
-                 onChange={handleSearch}
+                type="text"
+                placeholder="Search for a product..."
+                value={searchProduct}
+                onChange={handleSearch}
               />
               <select>
                 <option value>All Categories</option>
@@ -156,6 +459,11 @@ const Header = () => {
             </form>
           </div>
           <div className="headerIconBox">
+            <div className="heartIconTextBox">
+              <a >
+                <RxHamburgerMenu className="iconText hamburgerBoxIcon" />
+              </a>
+            </div>
             <div className="heartIconTextBox">
               <a onClick={getUser} href="#">
                 <AiOutlineUser className="iconText" />

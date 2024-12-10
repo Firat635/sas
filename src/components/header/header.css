@@ -109,13 +109,251 @@ header {
 
             .logoBox {
                 width: 25%;
+                position: relative;
 
-                a {
+                .logoImg {
                     img {
                         width: 110px;
                         object-fit: cover;
                     }
                 }
+
+                .hamburgerListBox {
+                    display: none;
+                    position: absolute;
+                    background-color: #fff;
+                    padding-top: 30px;
+                    z-index: 999;
+                    left: -15%;
+                    top: -65px;
+                    width: 400px;
+                    height: 100vh;
+                    overflow: hidden;
+                    overflow-y: scroll;
+                    scrollbar-width: none;
+                    .menuBoxHamburger {
+                        position: relative;
+                        width: 100%;
+                        
+
+                        .iconCloseBox {
+                            position: absolute;
+                            top: -40px;
+                            right: 13px;
+                            cursor: pointer;
+
+                            .iconClose {
+                                font-size: 20px;
+                            }
+                        }
+
+                        form {
+                            margin: 20px 0px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+
+                            input {
+                                width: 75%;
+                                padding: 7px 20px;
+                                outline: none;
+                                border: solid 1px rgba(128, 128, 128, 0.514);
+                                border-right: none;
+                            }
+
+                            button {
+                                border: none;
+                                padding: 7.6px 10px;
+                                background-color: #A6C76C;
+                                cursor: pointer;
+
+                                .searchIconLop {
+                                    transform: rotate(90deg);
+                                    color: #fff;
+                                    font-size: 20px;
+
+                                }
+
+                            }
+                        }
+
+                        .menuCategoriesBox {
+                            width: 100%;
+
+                            .menuCategoriesText {
+                                width: 100%;
+                                display: flex;
+                                margin: 0;
+                                padding: 0;
+
+                                li {
+                                    width: 100%;
+
+                                    a {
+                                        text-transform: uppercase;
+                                        font-weight: 700;
+                                        font-size: 16px;
+                                        padding: 10px 0px;
+                                        color: #333;
+                                        display: inline-block;
+
+                                    }
+
+                                    .menuTextLink {
+                                        width: 96%;
+                                        padding-left: 30px;
+                                        position: relative;
+                                        color: #A6C76C;
+
+                                        &::before {
+                                            content: "";
+                                            position: absolute;
+                                            bottom: 0;
+                                            left: 0;
+                                            width: 100%;
+
+                                            border-bottom: solid 2px #A6C76C;
+                                        }
+                                    }
+
+                                    .categoriesTextLink {
+                                        width: 50%;
+                                    }
+                                }
+                            }
+                        }
+
+                        .headerHamburger-Text {
+
+                            .allLinkText {
+                                margin: 0;
+                                padding: 0;
+
+                                li {
+                                    border-top: solid 1px rgba(128, 128, 128, 0.441);
+
+                                    &:hover {
+
+                                        .linkTextBox {
+                                            height: 250px;
+                                            overflow-y: scroll;
+
+                                            .linkTextDownBox {
+
+                                                overflow: visible;
+                                                height: 100%;
+                                                opacity: 1;
+
+
+
+                                            }
+                                        }
+
+                                        a {
+                                            .iconBoxArrDown {
+                                                transform: rotate(180deg);
+                                            }
+                                        }
+
+                                    }
+
+
+                                    a {
+
+                                        padding: 9px 30px;
+                                        display: inline-block;
+                                        text-transform: uppercase;
+                                        font-size: 12px;
+                                        color: gray;
+                                        font-weight: 500;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        transition: .5s;
+
+                                        &:hover {
+                                            color: #A6C76C;
+                                        }
+
+                                        .iconBoxArrDown {
+                                            font-size: 17px;
+                                        }
+
+                                    }
+
+
+
+                                    .linkTextBox {
+
+                                        height: 0px;
+                                        overflow: hidden;
+
+
+                                        transition: all 0.5s ease;
+
+
+                                        .linkTextDownBox {
+                                            padding: 0;
+                                            margin: 0;
+                                            height: 100%;
+
+                                            li {
+                                                border: none;
+                                                padding: 0;
+                                                margin: 0;
+
+                                                a {
+                                                    text-transform: none;
+                                                    padding: 5px 40px;
+                                                    font-size: 13px;
+
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+                        
+                        .shareBox {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-top: solid 1px rgba(128, 128, 128, 0.502);
+                           
+                            padding: 20px 0px;
+                
+                            
+                
+                           
+                
+                            .shareBoxInfo {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                
+                                .shareIcon {
+                                    color: gray;
+                                    border-radius: 50%;
+                                    border: solid 1px gray;
+                                    height: 30px;
+                                    width: 30px;
+                                    padding: 7px;
+                                    margin-left: 10px;
+                                    transition: .5s;
+                                    cursor: pointer;
+                
+                                    &:hover {
+                                        color: #A6C76C;
+                                        border: solid 1px #A6C76C;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
             }
 
             .headerFrom {
@@ -211,9 +449,24 @@ header {
                         line-height: 1;
                     }
 
+                    .hamburgerBoxIcon {
+                        display: none;
+
+                    }
+
+
+
+
                     .iconText {
                         font-size: 30px;
                     }
+
+                }
+
+                .heartIconTextBox {
+                    position: relative;
+
+
 
                 }
 
@@ -1384,8 +1637,20 @@ header {
         header {
             & .containerTop {
                 & .middleHeader {
-                    & .headerFrom {
-                        display: none;
+                    & .headerIconBox {
+                        & a {
+                            .hamburgerBoxIcon {
+                                display: block;
+
+                            }
+
+                        }
+
+                        .heartIconTextBox {
+                            .hamburgerListBox {
+                                display: block;
+                            }
+                        }
                     }
                 }
             }
@@ -1393,7 +1658,53 @@ header {
 
         header {
             & .containerTop {
-                & .endHeader {
+                & .middleHeader {
+                    & .logoBox {
+                        .hamburgerListBox {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    header {
+        & .containerTop {
+            & .middleHeader {
+                & .headerFrom {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    header {
+        & .containerTop {
+            & .endHeader {
+                display: none;
+            }
+        }
+    }
+
+    header {
+        & .containerTop {
+            & .middleHeader {
+                & .headerIconBox {
+                    & a {
+                        .iconText {
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width:768px) {
+        header {
+            & .containerTop {
+                .topHeader {
                     display: none;
                 }
             }
@@ -1403,36 +1714,12 @@ header {
             & .containerTop {
                 & .middleHeader {
                     & .headerIconBox {
-                        & a {
-                            .iconText {
-                                font-size: 25px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        @media (max-width:768px) {
-            header {
-                & .containerTop {
-                    .topHeader {
-                        display: none;
-                    }
-                }
-            }
-
-            header {
-                & .containerTop {
-                    & .middleHeader {
-                        & .headerIconBox {
-                            & .iconTextBoxBefore {
-                                &::before {
-                                    height: 17px;
-                                    width: 17px;
-                                    font-size: 12px;
-                                    right: -14px;
-                                }
+                        & .iconTextBoxBefore {
+                            &::before {
+                                height: 17px;
+                                width: 17px;
+                                font-size: 12px;
+                                right: -14px;
                             }
                         }
                     }
@@ -1440,6 +1727,7 @@ header {
             }
         }
     }
+}
 }
 
 /* Mobile */

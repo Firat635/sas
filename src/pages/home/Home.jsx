@@ -48,7 +48,7 @@ const Home = () => {
           ) : (
             <h2 className="text-danger text-center">No products found</h2>
           )
-        ) : (
+          ) : (
           <>
             <section id="heroSection">
               <Carousel />
